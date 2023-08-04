@@ -1,5 +1,6 @@
 import { useState } from "react";
-import React from 'react'
+import React, { Component } from 'react'
+
 export const carDatas = [
     {
         id: 1,
@@ -37,12 +38,7 @@ export const carDatas = [
         imageUrl: "https://media.ed.edmunds-media.com/bmw/x5/2024/oem/2024_bmw_x5_4dr-suv_xdrive50e_fq_oem_1_1600.jpg",
     },
 ];
-export default function Data() {
-    const [cars, setCars] = useState(carDatas);
 
-    function AddCar(car) {
-        setCars(...cars, car);
-    }
-}
+
 
 

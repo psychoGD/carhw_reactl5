@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-export default function Form() {
+export default function Form({addCar}) {
     const [model, setModel] = useState("");
   const [vendor, setVendor] = useState("");
   const [price, setPrice] = useState("");
@@ -22,6 +22,17 @@ export default function Form() {
     setVendor("");
     setPrice("");
     setImageUrl("");
+    let obj = 
+      {
+        id: 7,
+        model: model,
+        vendor: vendor,
+        price: price,
+        imageUrl: imageUrl,
+    }
+    
+    addCar(obj);
+    
   };
   return (
     <div className="container">
